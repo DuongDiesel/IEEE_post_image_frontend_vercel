@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
 import './Classifier.css'
+import {Spinner, Button, Alert, Image} from 'react-bootstrap'
+import axios from 'axios'
 
 class Classifier extends Component {
     state = {
