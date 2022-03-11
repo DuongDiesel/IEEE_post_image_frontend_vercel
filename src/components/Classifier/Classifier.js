@@ -84,3 +84,4 @@ class Classifier extends Component {
         );
     }
 }
+export default Classifier;
