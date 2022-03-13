@@ -43,9 +43,6 @@ class Classifier extends Component {
         console.log(this.state.files)
     }
 
-    onDrop =(files) =>{
-        this.setState({files})
-    }
     render() {
         const files = this.state.files.map(file => (
             <li key={file.name}>
