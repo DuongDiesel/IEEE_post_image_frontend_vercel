@@ -24,6 +24,25 @@ class Classifier extends Component {
         })
     }
 
+    sendImage =()=> {
+        this.activateSpinner()
+        let formData = new FormData()
+        formData.append('picture', this.state.files[0], this.state.files[0].name)
+        axios.post("https://whatimage-django-back.herokuapp.com/api/images/", formData, {
+            headers: {
+               'accept': 'application/json',
+               'content-type': 'multipart/form-data'
+            }
+        })
+        .then(resp=>{
+            this.getImageClass(resp)
+            console.log(resp.data.id)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+
     onDrop =(files) =>{
         this.setState({
             //files:[],
