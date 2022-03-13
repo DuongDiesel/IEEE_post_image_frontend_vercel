@@ -38,9 +38,9 @@ class Classifier extends Component {
             this.setState({
                 files,
                 isLoading: false
-            })
+            }, ()=>{console.log(this.state.files)})
         }, 1000);
-        console.log(this.state.files)
+        
     }
 
     render() {
