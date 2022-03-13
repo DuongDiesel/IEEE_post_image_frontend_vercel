@@ -40,6 +40,7 @@ class Classifier extends Component {
                 isLoading: false
             })
         }, 1000);
+        console.log(this.state.files)
     }
 
     onDrop =(files) =>{
