@@ -8,9 +8,10 @@ class Classifier extends Component {
     state = {
         files: [],
         isLoading: false,
+        recentImage: null,
     }
 
-    activateSpinner = () => {
+    activateSpinner = () => {  //30
         this.setState({
             files:[],
             isLoading:true,
@@ -64,7 +65,7 @@ class Classifier extends Component {
             }
         })
         .then(resp=>{
-            //this.setState({recentImage:resp})
+            this.setState({recentImage:resp})
             console.log(resp)
         })
         .catch(err=>{
@@ -76,9 +77,9 @@ class Classifier extends Component {
 
     onDrop =(files) =>{
         this.setState({
-            //files:[],
+            files:[],
             isLoading: true,
-            //recentImage:null
+            recentImage:null
             })
         this.loadImage(files)
     }
