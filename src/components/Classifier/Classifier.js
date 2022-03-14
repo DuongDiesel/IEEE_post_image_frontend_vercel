@@ -57,7 +57,7 @@ class Classifier extends Component {
         .catch(err=>{
            console.log(err)
        })
-       this.deactivateSpinner()
+      // this.deactivateSpinner()
 
     }
 
