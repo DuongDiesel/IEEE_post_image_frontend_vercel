@@ -45,6 +45,7 @@ class Classifier extends Component {
     }
 
     getImageClass =(obj)=> {
+        console.log(obj.data.id)
         axios.get("https://whatimage-django-back.herokuapp.com/api/images/${obj.data.id}/", {
             headers: {
                'accept': 'application/json',
