@@ -44,6 +44,23 @@ class Classifier extends Component {
         })
     }
 
+    getImageClass =(obj)=> {
+        axios.get("https://whatimage-django-back.herokuapp.com/api/images/${obj.data.id}/", {
+            headers: {
+               'accept': 'application/json',
+            }
+        })
+        .then(resp=>{
+            //this.setState({recentImage:resp})
+            console.log(resp)
+        })
+        .catch(err=>{
+           console.log(err)
+       })
+       this.deactivateSpinner()
+
+    }
+
     onDrop =(files) =>{
         this.setState({
             //files:[],
