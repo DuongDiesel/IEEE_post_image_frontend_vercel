@@ -10,6 +10,18 @@ class Classifier extends Component {
         isLoading: false,
     }
 
+    activateSpinner = () => {
+        this.setState({
+            files:[],
+            isLoading:true,
+           })
+    }
+
+    deactivateSpinner=()=> {
+       this.setState({isLoading:false})
+    }
+
+
     componentDidMount() {
         this.getImages()
     }
@@ -25,7 +37,7 @@ class Classifier extends Component {
     }
 
     sendImage =()=> {
-        //this.activateSpinner()
+        this.activateSpinner()
         let formData = new FormData()
         formData.append('picture', this.state.files[0], this.state.files[0].name)
         axios.post("https://whatimage-django-back.herokuapp.com/api/images/", formData, {
@@ -58,7 +70,7 @@ class Classifier extends Component {
         .catch(err=>{
            console.log(err)
        })
-      // this.deactivateSpinner()
+       this.deactivateSpinner()
 
     }
 
