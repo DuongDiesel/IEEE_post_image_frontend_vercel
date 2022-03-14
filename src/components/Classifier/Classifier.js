@@ -35,7 +35,7 @@ class Classifier extends Component {
             }
         })
         .then(resp=>{
-            this.getImageClass(resp)
+            //this.getImageClass(resp)
             //console.log(resp)
             console.log(resp.data.id)
         })
