@@ -4,6 +4,7 @@ import './Classifier.css'
 import {Spinner, Button, Alert, Image} from 'react-bootstrap'
 import axios from 'axios'
 
+import {useDropzone} from 'react-dropzone';
 
 
 class Classifier extends Component {
@@ -96,12 +97,20 @@ class Classifier extends Component {
         
     }
 
+
+
+
     render() {
         const files = this.state.files.map(file => (
             <li key={file.name}>
               {file.name} - {file.size} bytes
             </li>
           ));
+        const {getRootProps, getInputProps, isDragActive} = useDropzone({
+            accept: {
+              'image/jpeg': ['.jpeg', '.png']
+            }
+          });
         return (
             <>
             <Dropzone onDrop={this.onDrop} >
