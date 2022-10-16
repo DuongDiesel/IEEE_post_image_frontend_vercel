@@ -7,6 +7,7 @@ import axios from 'axios'
 import {useDropzone} from 'react-dropzone';
 
 
+
 class Classifier extends Component {
     state = {
         files: [],
@@ -96,8 +97,6 @@ class Classifier extends Component {
         }, 1000);
         
     }
-
-
 
 
     render() {
