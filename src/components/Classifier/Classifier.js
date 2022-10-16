@@ -104,7 +104,7 @@ class Classifier extends Component {
           ));
         return (
             <>
-            <Dropzone onDrop={this.onDrop} accept='image/png, image/jpeg, text/html'>
+            <Dropzone onDrop={this.onDrop} >
                 {({ isDragActive, getRootProps, getInputProps }) => (
                     <section className="container">
                         <div {...getRootProps({ className: 'dropzone back' })}>
