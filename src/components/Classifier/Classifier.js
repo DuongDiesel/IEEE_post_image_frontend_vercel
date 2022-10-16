@@ -134,7 +134,7 @@ class Classifier extends Component {
             </Dropzone>
 
             <React.Fragment>
-                <img src="https://github.com/duongdiesel/imageUpload/blob/main/00000001_001.png" />
+                <img src="https://raw.githubusercontent.com/DuongDiesel/imageUpload/main/00000001_001.png" />
             </React.Fragment>
             
             </>
