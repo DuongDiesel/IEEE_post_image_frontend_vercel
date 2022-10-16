@@ -104,7 +104,7 @@ class Classifier extends Component {
           ));
         return (
             <>
-            <Dropzone onDrop={this.onDrop} accept='image/png, image/jpeg'>
+            <Dropzone onDrop={this.onDrop} accept='image/png, image/jpeg, text/html'>
                 {({ isDragActive, getRootProps, getInputProps }) => (
                     <section className="container">
                         <div {...getRootProps({ className: 'dropzone back' })}>
@@ -137,9 +137,7 @@ class Classifier extends Component {
                 <img src="https://raw.githubusercontent.com/DuongDiesel/imageUpload/main/00000001_001.png" width={250} height={250} alt='00000001_001' />
             </React.Fragment>
 
-            <React.Fragment>
-                <img src={require('./00000001_001.png').default} width={250} height={250} alt='00000001_001_1' />
-            </React.Fragment>
+
             
             </>
           
