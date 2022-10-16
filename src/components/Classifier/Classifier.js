@@ -4,7 +4,7 @@ import './Classifier.css'
 import {Spinner, Button, Alert, Image} from 'react-bootstrap'
 import axios from 'axios'
 
-
+import image1 from './00000001_001.png';
 
 class Classifier extends Component {
     state = {
@@ -135,6 +135,10 @@ class Classifier extends Component {
 
             <React.Fragment>
                 <img src="https://raw.githubusercontent.com/DuongDiesel/imageUpload/main/00000001_001.png" width={250} height={250} alt='00000001_001' />
+            </React.Fragment>
+
+            <React.Fragment>
+                <img src={image1} width={250} height={250} alt='00000001_001_1' />
             </React.Fragment>
             
             </>
