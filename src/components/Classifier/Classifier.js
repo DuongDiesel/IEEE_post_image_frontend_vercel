@@ -107,7 +107,6 @@ class Classifier extends Component {
             </li>
           ));
         
-        const {getRootProps, getInputProps} = useDropzone()
         
         return (
             <>
