@@ -4,7 +4,7 @@ import './Classifier.css'
 import {Spinner, Button, Alert, Image} from 'react-bootstrap'
 import axios from 'axios'
 
-import pic1 from ".logo192.png"
+
 
 class Classifier extends Component {
     state = {
