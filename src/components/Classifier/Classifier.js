@@ -139,16 +139,10 @@ class Classifier extends Component {
             </Dropzone>
 
             <React.Fragment>
-                <img src="https://raw.githubusercontent.com/DuongDiesel/imageUpload/main/00000001_001.png" width={250} height={250} alt='00000001_001' />
-            </React.Fragment>
-
-            
-            <React.Fragment>
                 <img src="https://www.dropzone.dev/images/icons/github.svg" width={250} height={250} alt='test' />
             </React.Fragment>
 
-            
-            
+
             </>
           
         );
