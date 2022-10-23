@@ -130,7 +130,7 @@ class Classifier extends Component {
                         {this.state.recentImage &&
                             <React.Fragment>
                                 <Alert variant='primary'>
-                                    {this.state.recentImage.data.classified}
+                                    {this.state.recentImage.data.classified & console.log(this.state.recentImage.data.classified[1])}
                                 </Alert>
                                 <Image className='justify-content-center' src={this.state.recentImage.data.picture} height='200' rounded />
                             </React.Fragment>}
