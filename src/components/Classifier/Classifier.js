@@ -14,6 +14,23 @@ class Classifier extends Component {
         result_table:[],
         isLoading: false,
         recentImage: null,
+        result_0:0,
+        result_1:0,
+        result_2:0,
+        result_3:0,
+        result_4:0,
+        result_5:0,
+        result_6:0,
+        result_7:0,
+        result_8:0,
+        result_9:0,
+        result_10:0,
+        result_11:0,
+        result_12:0,
+        result_13:0,
+        result_14:0,
+        
+
     }
 
     activateSpinner = () => {  //30
@@ -75,7 +92,22 @@ class Classifier extends Component {
             //let result_list = result_string.split(", ")
             let result_list = JSON.parse("[" + result_string + "]");
             this.setState({result_table:result_list})
-            console.log(this.state.result_table)
+            this.setState({result_0:result_list[0]})
+            this.setState({result_1:result_list[1]})
+            this.setState({result_2:result_list[2]})
+            this.setState({result_3:result_list[3]})
+            this.setState({result_4:result_list[4]})
+            this.setState({result_5:result_list[5]})
+            this.setState({result_6:result_list[6]})
+            this.setState({result_7:result_list[7]})
+            this.setState({result_8:result_list[8]})
+            this.setState({result_9:result_list[9]})
+            this.setState({result_10:result_list[10]})
+            this.setState({result_11:result_list[11]})
+            this.setState({result_12:result_list[12]})
+            this.setState({result_13:result_list[13]})
+            this.setState({result_14:result_list[14]})
+            console.log(this.state.result_14)
             //console.log(result_list[0][0])
             console.log(resp)
         })
@@ -115,7 +147,7 @@ class Classifier extends Component {
                       <ul>{listItems}</ul>  
             </div>  
           );  
-     }
+    }
      
 
 
