@@ -92,7 +92,7 @@ class Classifier extends Component {
             //let result_list = result_string.split(", ")
             let result_list = JSON.parse("[" + result_string + "]");
             this.setState({result_table:result_list})
-            this.setState({result_0:result_list[0]})
+            this.setState({result_0:result_list[0][0]})
             this.setState({result_1:result_list[1]})
             this.setState({result_2:result_list[2]})
             this.setState({result_3:result_list[3]})
@@ -107,7 +107,7 @@ class Classifier extends Component {
             this.setState({result_12:result_list[12]})
             this.setState({result_13:result_list[13]})
             this.setState({result_14:result_list[14]})
-            console.log(this.state.result_14)
+            console.log(this.state.result_0)
             //console.log(result_list[0][0])
             console.log(resp)
         })
