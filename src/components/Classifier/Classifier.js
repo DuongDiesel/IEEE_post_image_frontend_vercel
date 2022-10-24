@@ -70,9 +70,10 @@ class Classifier extends Component {
         })
         .then(resp=>{
             this.setState({recentImage:resp})
-            let abc=this.state.recentImage.data.classified
-            console.log("abc")
-            console.log(abc)
+            let result_string = this.state.recentImage.data.classified
+            let result_list = list(result_string.split(", "))
+
+            console.log(result_list[0])
             console.log(resp)
         })
         .catch(err=>{
