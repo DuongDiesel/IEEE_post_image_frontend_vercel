@@ -151,7 +151,7 @@ class Classifier extends Component {
                             <React.Fragment>
                                 <Alert variant='primary'>
                                     {this.state.recentImage.data.classified}
-                                    {renderTableData()}
+                                    {this.state.result_table[0]}
                                 </Alert>
   
                                 
