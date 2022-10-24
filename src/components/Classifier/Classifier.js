@@ -182,45 +182,72 @@ class Classifier extends Component {
                         {this.state.recentImage &&
                             <React.Fragment>
                                 <Table striped bordered hover>
-                                    
-                                        <tr>
-                                            <th>Thorax</th>
-                                            <td>Atelectasis</td>
-                                            <td>Cardiomegaly</td>
-                                            <td>Effusion</td>
-                                            <td>Infiltration</td>
-                                            <td>Mass</td>
-                                            <td>Nodule</td>
-                                            <td>Pneumonia</td>
-                                            <td>Pneumothorax</td>
-                                            <td>Consolidation</td>
-                                            <td>Edema</td>
-                                            <td>Emphysema</td>
-                                            <td>Fibrosis</td>
-                                            <td>Pleural_Thickening</td>
-                                            <td>Hernia</td>
-                                            <td>No Finding</td>
-                                        </tr>
-                                        <tbody>
-                                        <tr>
-                                            <th>Predic %</th>
-                                            <td>{this.state.result_0}</td>
-                                            <td>{this.state.result_1}</td>
-                                            <td>{this.state.result_2}</td>
-                                            <td>{this.state.result_3}</td>
-                                            <td>{this.state.result_4}</td>
-                                            <td>{this.state.result_5}</td>
-                                            <td>{this.state.result_6}</td>
-                                            <td>{this.state.result_7}</td>
-                                            <td>{this.state.result_8}</td>
-                                            <td>{this.state.result_9}</td>
-                                            <td>{this.state.result_10}</td>
-                                            <td>{this.state.result_11}</td>
-                                            <td>{this.state.result_12}</td>
-                                            <td>{this.state.result_13}</td>
-                                            <td>{this.state.result_14}</td>
-                                        </tr>
-                                        </tbody>
+                                    <tr>
+                                        <th>Thorax</th>
+                                        <th>Predic</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Atelectasis</td>
+                                        <td>{this.state.result_0} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cardiomegaly</td>
+                                        <td>{this.state.result_1} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Effusion</td>
+                                        <td>{this.state.result_2} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Infiltration</td>
+                                        <td>{this.state.result_3} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>{this.state.result_4} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nodule</td>
+                                        <td>{this.state.result_5} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pneumonia</td>
+                                        <td>{this.state.result_6} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pneumothorax</td>
+                                        <td>{this.state.result_7} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Consolidation</td>
+                                        <td>{this.state.result_8} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Edema</td>
+                                        <td>{this.state.result_9} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Emphysema</td>
+                                        <td>{this.state.result_10} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fibrosis</td>
+                                        <td>{this.state.result_11} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pleural Thickening</td>
+                                        <td>{this.state.result_12} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hernia</td>
+                                        <td>{this.state.result_13} %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>No Finding</td>
+                                        <td>{this.state.result_14} %</td>
+                                    </tr>
+                                       
+                                        
                         
                                 </Table>
   
