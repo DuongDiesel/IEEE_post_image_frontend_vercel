@@ -181,6 +181,7 @@ class Classifier extends Component {
 
                         {this.state.recentImage &&
                             <React.Fragment>
+                                <Alert variant="primary">
                                 <Table striped bordered hover size="sm">
                                     <tr>
                                         <th>Thorax</th>
@@ -250,7 +251,7 @@ class Classifier extends Component {
                                         
                         
                                 </Table>
-  
+                                </Alert>
                                 
                                 <Image className='justify-content-center' src={this.state.recentImage.data.picture} height='200' rounded />
                             </React.Fragment>}
