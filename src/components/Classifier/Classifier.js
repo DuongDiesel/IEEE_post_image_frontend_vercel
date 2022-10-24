@@ -71,7 +71,7 @@ class Classifier extends Component {
         .then(resp=>{
             this.setState({recentImage:resp})
             let result_string = this.state.recentImage.data.classified
-            let result_list = list(result_string.split(", "))
+            let result_list = result_string.split(", ")
 
             console.log(result_list[0])
             console.log(resp)
