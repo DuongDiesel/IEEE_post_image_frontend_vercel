@@ -181,7 +181,7 @@ class Classifier extends Component {
 
                         {this.state.recentImage &&
                             <React.Fragment>
-                                <Table striped bordered hover>
+                                <Table striped bordered hover size="sm">
                                     <tr>
                                         <th>Thorax</th>
                                         <th>Predic</th>
