@@ -71,6 +71,7 @@ class Classifier extends Component {
         .then(resp=>{
             this.setState({recentImage:resp})
             let abc=this.state.recentImage.data.classified
+            console.log("abc")
             console.log(abc)
             console.log(resp)
         })
