@@ -106,15 +106,17 @@ class Classifier extends Component {
     }
 
     renderTableData() {
-        return this.state.result_table.map((data,index) => {
-           const { data} = data//destructuring
-           return (
-              <tr key={data}>
-                 <td>{data}</td>
-              </tr>
-           )
-        })
+        const listItems = this.state.result_table.map((myList) =>  
+            <li>{myList}</li>  
+        );  
+        return (  
+            <div>  
+                  <h2>React Map Example</h2>  
+                      <ul>{listItems}</ul>  
+            </div>  
+          );  
      }
+     
 
 
     render() {
