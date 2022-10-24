@@ -70,6 +70,8 @@ class Classifier extends Component {
         })
         .then(resp=>{
             this.setState({recentImage:resp})
+            let abc=this.state.recentImage.data.classified
+            console.log(abc)
             console.log(resp)
         })
         .catch(err=>{
@@ -130,7 +132,7 @@ class Classifier extends Component {
                         {this.state.recentImage &&
                             <React.Fragment>
                                 <Alert variant='primary'>
-                                    {this.state.recentImage.data.classified[0]}
+                                    {this.state.recentImage.data.classified}
                                 </Alert>
   
                                 
