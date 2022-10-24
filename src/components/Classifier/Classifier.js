@@ -171,7 +171,7 @@ class Classifier extends Component {
                                         <tbody>
                                         <tr>
                                             <th>Predic %</th>
-                                            <td>{this.state.result_table[0][0]}</td>
+                                            <td>{this.state.result_table[0]}</td>
                                             <td>{this.state.result_table[1]}</td>
                                             <td>{this.state.result_table[2]}</td>
                                             <td>{this.state.result_table[3]}</td>
