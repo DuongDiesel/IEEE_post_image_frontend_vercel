@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
 import './Classifier.css'
-import {Spinner, Button, Alert, Image} from 'react-bootstrap'
+import {Spinner, Button, Alert, Image, Table} from 'react-bootstrap'
 import axios from 'axios'
 
 import {useDropzone} from 'react-dropzone';
@@ -149,11 +149,10 @@ class Classifier extends Component {
 
                         {this.state.recentImage &&
                             <React.Fragment>
-                                <Alert variant='primary'>
-                                    <table>
-                                    <tbody>
+                                <Table striped bordered hover>
+                                    
                                         <tr>
-                                            <td>Benh</td>
+                                            <th>Benh</th>
                                             <td>Benh</td>
                                             <td>Benh</td>
                                             <td>Benh</td>
@@ -169,8 +168,9 @@ class Classifier extends Component {
                                             <td>Benh</td>
                                             <td>Benh</td>
                                         </tr>
+                                        <tbody>
                                         <tr>
-                                            <td>Predic</td>
+                                            <th>Predic %</th>
                                             <td>{this.state.result_table[0]}</td>
                                             <td>{this.state.result_table[1]}</td>
                                             <td>{this.state.result_table[2]}</td>
@@ -188,8 +188,8 @@ class Classifier extends Component {
                                             <td>{this.state.result_table[14]}</td>
                                         </tr>
                                         </tbody>
-                                    </table>
-                                </Alert>
+                        
+                                </Table>
   
                                 
                                 <Image className='justify-content-center' src={this.state.recentImage.data.picture} height='200' rounded />
