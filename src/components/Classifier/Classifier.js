@@ -184,40 +184,41 @@ class Classifier extends Component {
                                 <Table striped bordered hover>
                                     
                                         <tr>
-                                            <th>Benh</th>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
-                                            <td>Benh</td>
+                                            <th>Thorax</th>
+                                            <td>Atelectasis</td>
+                                            <td>Cardiomegaly</td>
+                                            <td>Effusion</td>
+                                            <td>Infiltration</td>
+                                            <td>Mass</td>
+                                            <td>Nodule</td>
+                                            <td>Pneumonia</td>
+                                            <td>Pneumothorax</td>
+                                            <td>Consolidation</td>
+                                            <td>Edema</td>
+                                            <td>Emphysema</td>
+                                            <td>Fibrosis</td>
+                                            <td>Pleural_Thickening</td>
+                                            <td>Hernia</td>
+                                            <td>No Finding</td>
                                         </tr>
                                         <tbody>
                                         <tr>
                                             <th>Predic %</th>
-                                            <td>{this.state.result_table[0]}</td>
-                                            <td>{this.state.result_table[1]}</td>
-                                            <td>{this.state.result_table[2]}</td>
-                                            <td>{this.state.result_table[3]}</td>
-                                            <td>{this.state.result_table[4]}</td>
-                                            <td>{this.state.result_table[5]}</td>
-                                            <td>{this.state.result_table[6]}</td>
-                                            <td>{this.state.result_table[7]}</td>
-                                            <td>{this.state.result_table[8]}</td>
-                                            <td>{this.state.result_table[9]}</td>
-                                            <td>{this.state.result_table[10]}</td>
-                                            <td>{this.state.result_table[11]}</td>
-                                            <td>{this.state.result_table[12]}</td>
-                                            <td>{this.state.result_table[13]}</td>
-                                            <td>{this.state.result_table[14]}</td>
+                                            <td>{this.state.result_0}</td>
+                                            <td>{this.state.result_1}</td>
+                                            <td>{this.state.result_2}</td>
+                                            <td>{this.state.result_3}</td>
+                                            <td>{this.state.result_4}</td>
+                                            <td>{this.state.result_5}</td>
+                                            <td>{this.state.result_6}</td>
+                                            <td>{this.state.result_7}</td>
+                                            <td>{this.state.result_8}</td>
+                                            <td>{this.state.result_9}</td>
+                                            <td>{this.state.result_10}</td>
+                                            <td>{this.state.result_11}</td>
+                                            <td>{this.state.result_12}</td>
+                                            <td>{this.state.result_13}</td>
+                                            <td>{this.state.result_14}</td>
                                         </tr>
                                         </tbody>
                         
