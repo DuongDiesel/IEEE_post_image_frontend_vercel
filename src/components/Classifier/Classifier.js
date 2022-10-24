@@ -74,7 +74,7 @@ class Classifier extends Component {
             //let result_list = result_string.split(", ")
             let result_list = JSON.parse("[" + result_string + "]");
 
-            console.log(result_list[0])
+            console.log(result_list[0][0])
             console.log(resp)
         })
         .catch(err=>{
