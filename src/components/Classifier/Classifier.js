@@ -105,6 +105,17 @@ class Classifier extends Component {
         
     }
 
+    renderTableData() {
+        return this.state.result_table.map((data,index) => {
+           const { data} = data//destructuring
+           return (
+              <tr key={data}>
+                 <td>{data}</td>
+              </tr>
+           )
+        })
+     }
+
 
     render() {
         const files = this.state.files.map(file => (
@@ -138,6 +149,7 @@ class Classifier extends Component {
                             <React.Fragment>
                                 <Alert variant='primary'>
                                     {this.state.recentImage.data.classified}
+                                    {renderTableData()}
                                 </Alert>
   
                                 
