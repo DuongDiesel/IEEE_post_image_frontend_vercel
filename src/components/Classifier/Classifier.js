@@ -11,6 +11,7 @@ import {useDropzone} from 'react-dropzone';
 class Classifier extends Component {
     state = {
         files: [],
+        result_table:[],
         isLoading: false,
         recentImage: null,
     }
@@ -73,8 +74,9 @@ class Classifier extends Component {
             let result_string = this.state.recentImage.data.classified
             //let result_list = result_string.split(", ")
             let result_list = JSON.parse("[" + result_string + "]");
-
-            console.log(result_list[0][0])
+            this.setState({result_table:result_list})
+            console.log(this.state.result_table)
+            //console.log(result_list[0][0])
             console.log(resp)
         })
         .catch(err=>{
