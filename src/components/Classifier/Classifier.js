@@ -150,44 +150,44 @@ class Classifier extends Component {
                         {this.state.recentImage &&
                             <React.Fragment>
                                 <Alert variant='primary'>
-                                    {this.state.recentImage.data.classified}
                                     <table>
+                                    <tbody>
                                         <tr>
-                                            <th>Benh</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
-                                            <th>Benh1</th>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
+                                            <td>Benh</td>
                                         </tr>
                                         <tr>
-                                            <th>Predic</th>
-                                            <th>{this.state.result_table[0]}</th>
-                                            <th>{this.state.result_table[1]}</th>
-                                            <th>{this.state.result_table[2]}</th>
-                                            <th>{this.state.result_table[3]}</th>
-                                            <th>{this.state.result_table[4]}</th>
-                                            <th>{this.state.result_table[5]}</th>
-                                            <th>{this.state.result_table[6]}</th>
-                                            <th>{this.state.result_table[7]}</th>
-                                            <th>{this.state.result_table[8]}</th>
-                                            <th>{this.state.result_table[9]}</th>
-                                            <th>{this.state.result_table[10]}</th>
-                                            <th>{this.state.result_table[11]}</th>
-                                            <th>{this.state.result_table[12]}</th>
-                                            <th>{this.state.result_table[13]}</th>
-                                            <th>{this.state.result_table[14]}</th>
+                                            <td>Predic</td>
+                                            <td>{this.state.result_table[0]}</td>
+                                            <td>{this.state.result_table[1]}</td>
+                                            <td>{this.state.result_table[2]}</td>
+                                            <td>{this.state.result_table[3]}</td>
+                                            <td>{this.state.result_table[4]}</td>
+                                            <td>{this.state.result_table[5]}</td>
+                                            <td>{this.state.result_table[6]}</td>
+                                            <td>{this.state.result_table[7]}</td>
+                                            <td>{this.state.result_table[8]}</td>
+                                            <td>{this.state.result_table[9]}</td>
+                                            <td>{this.state.result_table[10]}</td>
+                                            <td>{this.state.result_table[11]}</td>
+                                            <td>{this.state.result_table[12]}</td>
+                                            <td>{this.state.result_table[13]}</td>
+                                            <td>{this.state.result_table[14]}</td>
                                         </tr>
+                                        </tbody>
                                     </table>
                                 </Alert>
   
