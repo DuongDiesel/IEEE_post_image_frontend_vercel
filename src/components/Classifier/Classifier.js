@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
 import './Classifier.css'
-import {Spinner, Button, Alert, Image, Table} from 'react-bootstrap'
+import {Spinner, Button, Alert, Image, Table, Toast} from 'react-bootstrap'
 import axios from 'axios'
 
 import {useDropzone} from 'react-dropzone';
@@ -262,6 +262,15 @@ class Classifier extends Component {
             <React.Fragment>
                 <img src="https://www.dropzone.dev/images/icons/github.svg" width={250} height={250} alt='test' />
             </React.Fragment>
+
+            <Toast>
+            <Toast.Header>
+                <img src="https://www.dropzone.dev/images/icons/github.svg" width={250} height={250} className="rounded me-2" alt="" />
+                <strong className="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+            </Toast.Header>
+            <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+            </Toast>
 
 
             </>
