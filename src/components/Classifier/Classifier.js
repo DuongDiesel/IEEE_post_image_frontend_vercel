@@ -29,6 +29,18 @@ class Classifier extends Component {
         result_12:0,
         result_13:0,
         result_14:0,
+
+        result0: {name:"Cardiomegaly", value:0},
+
+        result :[{
+                    _id:0,
+                    thorax:"Cardiomegaly",
+                    value:0
+                },{
+                    _id:14,
+                    thorax:"No Finding",
+                    value:0
+                }],
         
 
     }
@@ -91,7 +103,7 @@ class Classifier extends Component {
             let result_string = this.state.recentImage.data.classified
             //let result_list = result_string.split(", ")
             let result_list = JSON.parse("[" + result_string + "]");
-            this.setState({result_table:result_list})
+            this.setState({result_table:result_list})           
             this.setState({result_0:result_list[0][0]})
             this.setState({result_1:result_list[0][1]})
             this.setState({result_2:result_list[0][2]})
@@ -107,7 +119,14 @@ class Classifier extends Component {
             this.setState({result_12:result_list[0][12]})
             this.setState({result_13:result_list[0][13]})
             this.setState({result_14:result_list[0][14]})
-            console.log(this.state.result_0)
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 0 ? Object.assign(obj, { value: result_list[0][0]}) : obj)
+              )
+            }));
+
+            console.log(this.state.result)
             //console.log(result_list[0][0])
             console.log(resp)
         })
