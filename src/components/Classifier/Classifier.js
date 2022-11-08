@@ -339,7 +339,6 @@ class Classifier extends Component {
                                 </Table>
                                 </Alert>
                                 
-                                <Image className='justify-content-center' src={this.state.recentImage.data.picture} height='200' rounded />
                             </React.Fragment>}
                     </section>
                 )}
@@ -348,6 +347,10 @@ class Classifier extends Component {
             <React.Fragment>
                 <img src="https://www.dropzone.dev/images/icons/github.svg" width={150} height={150} alt='github code' />
             </React.Fragment>
+
+            <button onClick="window.open('https://mighty-forest-71579.herokuapp.com/');">
+                <span class="icon">Open</span>
+            </button>
 
 
 
