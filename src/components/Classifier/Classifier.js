@@ -288,6 +288,11 @@ class Classifier extends Component {
             </li>
           ));
 
+        const openLinkInNewTab = ( url ) => {
+        const newTab = window.open(url, '_blank', 'noopener,noreferrer');
+        if ( newTab ) newTab.opener = null;
+        }
+
         const items = [];
         const numAscending = [...this.state.result].sort((a, b) => b.value - a.value);
         for (const thorax of numAscending) {
@@ -348,9 +353,9 @@ class Classifier extends Component {
                 <img src="https://www.dropzone.dev/images/icons/github.svg" width={150} height={150} alt='github code' />
             </React.Fragment>
 
-            <button onClick="window.open('https://mighty-forest-71579.herokuapp.com/');">
-                <span class="icon">Open</span>
-            </button>
+
+
+            <button onClick={ () => openLinkInNewTab('https://mighty-forest-71579.herokuapp.com/')}> Click Here </button>
 
 
 
