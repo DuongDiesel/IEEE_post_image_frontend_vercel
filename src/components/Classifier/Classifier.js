@@ -34,7 +34,59 @@ class Classifier extends Component {
 
         result :[{
                     _id:0,
+                    thorax:"Atelectasis",
+                    value:0
+                },{
+                    _id:1,
                     thorax:"Cardiomegaly",
+                    value:0
+                },{
+                    _id:2,
+                    thorax:"Effusion",
+                    value:0
+                },{
+                    _id:3,
+                    thorax:"Infiltration",
+                    value:0
+                },{
+                    _id:4,
+                    thorax:"Mass",
+                    value:0
+                },{
+                    _id:5,
+                    thorax:"Nodule",
+                    value:0
+                },{
+                    _id:6,
+                    thorax:"Pneumonia",
+                    value:0
+                },{
+                    _id:7,
+                    thorax:"Pneumothorax",
+                    value:0
+                },{
+                    _id:8,
+                    thorax:"Consolidation",
+                    value:0
+                },{
+                    _id:9,
+                    thorax:"Edema",
+                    value:0
+                },{
+                    _id:10,
+                    thorax:"Emphysema",
+                    value:0
+                },{
+                    _id:11,
+                    thorax:"Fibrosis",
+                    value:0
+                },{
+                    _id:12,
+                    thorax:"Pleural Thickening",
+                    value:0
+                },{
+                    _id:13,
+                    thorax:"Hernia",
                     value:0
                 },{
                     _id:14,
