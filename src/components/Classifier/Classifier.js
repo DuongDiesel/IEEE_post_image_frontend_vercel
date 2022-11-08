@@ -14,23 +14,7 @@ class Classifier extends Component {
         result_table:[],
         isLoading: false,
         recentImage: null,
-        result_0:0,
-        result_1:0,
-        result_2:0,
-        result_3:0,
-        result_4:0,
-        result_5:0,
-        result_6:0,
-        result_7:0,
-        result_8:0,
-        result_9:0,
-        result_10:0,
-        result_11:0,
-        result_12:0,
-        result_13:0,
-        result_14:0,
 
-        result0: {name:"Cardiomegaly", value:0},
 
         result :[{
                     _id:0,
@@ -156,21 +140,23 @@ class Classifier extends Component {
             //let result_list = result_string.split(", ")
             let result_list = JSON.parse("[" + result_string + "]");
             this.setState({result_table:result_list})           
-            this.setState({result_0:result_list[0][0]})
-            this.setState({result_1:result_list[0][1]})
-            this.setState({result_2:result_list[0][2]})
-            this.setState({result_3:result_list[0][3]})
-            this.setState({result_4:result_list[0][4]})
-            this.setState({result_5:result_list[0][5]})
-            this.setState({result_6:result_list[0][6]})
-            this.setState({result_7:result_list[0][7]})
-            this.setState({result_8:result_list[0][8]})
-            this.setState({result_9:result_list[0][9]})
-            this.setState({result_10:result_list[0][10]})
-            this.setState({result_11:result_list[0][11]})
-            this.setState({result_12:result_list[0][12]})
-            this.setState({result_13:result_list[0][13]})
-            this.setState({result_14:result_list[0][14]})
+   
+            // <td>Atelectasis</td>[0][0]
+            // <td>Cardiomegaly</td>
+            // <td>Effusion</td>
+            // <td>Infiltration</td>
+            // <td>Mass</td>
+            // <td>Nodule</td>
+            // <td>Pneumonia</td>
+            // <td>Pneumothorax</td>
+            // <td>Consolidation</td>
+            // <td>Edema</td>
+            // <td>Emphysema</td>
+            // <td>Fibrosis</td>
+            // <td>Pleural Thickening</td>
+            // <td>Hernia</td>
+            // <td>No Finding</td>[0][14]
+                                       
 
             this.setState(prevState => ({
                 result: prevState.result.map(
@@ -292,17 +278,6 @@ class Classifier extends Component {
         
     }
 
-    renderTableData() {
-        const listItems = this.state.result_table.map((myList) =>  
-            <li>{myList}</li>  
-        );  
-        return (  
-            <div>  
-                  <h2>React Map Example</h2>  
-                      <ul>{listItems}</ul>  
-            </div>  
-          );  
-    }
      
 
 
@@ -371,7 +346,7 @@ class Classifier extends Component {
             </Dropzone>
 
             <React.Fragment>
-                <img src="https://www.dropzone.dev/images/icons/github.svg" width={250} height={250} alt='test' />
+                <img src="https://www.dropzone.dev/images/icons/github.svg" width={150} height={150} alt='github code' />
             </React.Fragment>
 
 
