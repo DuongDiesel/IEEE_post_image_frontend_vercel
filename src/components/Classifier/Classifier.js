@@ -314,14 +314,14 @@ class Classifier extends Component {
           ));
 
         const items = [];
-        const numAscending = [...this.state.result].sort((a, b) => a.value - b.value);
+        const numAscending = [...this.state.result].sort((a, b) => b.value - a.value);
         for (const thorax of numAscending) {
 
             
             items.push(
             
                 <tr>
-                <td>{thorax.name}</td>
+                <td>{thorax.thorax}</td>
                 <td>{thorax.value} %</td>
                 </tr>
 
