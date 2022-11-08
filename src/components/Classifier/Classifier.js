@@ -312,6 +312,21 @@ class Classifier extends Component {
               {file.name} - {file.size} bytes
             </li>
           ));
+
+        const items = [];
+        const numAscending = [...this.state.result].sort((a, b) => a.value - b.value);
+        for (const thorax of numAscending) {
+
+            
+            items.push(
+            
+                <tr>
+                <td>{thorax.name}</td>
+                <td>{thorax.value} %</td>
+                </tr>
+
+            )
+        }
         
         
         return (
@@ -342,66 +357,7 @@ class Classifier extends Component {
                                         <th>Thorax</th>
                                         <th>Predic</th>
                                     </tr>
-                                    <tr>
-                                        <td>Atelectasis</td>
-                                        <td>{this.state.result_0} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cardiomegaly</td>
-                                        <td>{this.state.result_1} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Effusion</td>
-                                        <td>{this.state.result_2} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Infiltration</td>
-                                        <td>{this.state.result_3} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mass</td>
-                                        <td>{this.state.result_4} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nodule</td>
-                                        <td>{this.state.result_5} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pneumonia</td>
-                                        <td>{this.state.result_6} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pneumothorax</td>
-                                        <td>{this.state.result_7} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Consolidation</td>
-                                        <td>{this.state.result_8} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Edema</td>
-                                        <td>{this.state.result_9} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Emphysema</td>
-                                        <td>{this.state.result_10} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fibrosis</td>
-                                        <td>{this.state.result_11} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pleural Thickening</td>
-                                        <td>{this.state.result_12} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hernia</td>
-                                        <td>{this.state.result_13} %</td>
-                                    </tr>
-                                    <tr>
-                                        <td>No Finding</td>
-                                        <td>{this.state.result_14} %</td>
-                                    </tr>
+                                    {items}
                                        
                                         
                         
