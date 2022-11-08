@@ -355,7 +355,7 @@ class Classifier extends Component {
 
 
 
-            <button onClick={ () => openLinkInNewTab('https://mighty-forest-71579.herokuapp.com/')}> Click Here </button>
+            <Button variant="outline-secondary" onClick={ () => openLinkInNewTab('https://mighty-forest-71579.herokuapp.com/')}> サンプルイマージ </Button>
 
 
 
