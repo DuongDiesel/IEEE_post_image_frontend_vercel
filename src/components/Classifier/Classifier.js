@@ -349,12 +349,6 @@ class Classifier extends Component {
                 )}
             </Dropzone>
 
-            <React.Fragment>
-                <img src="https://www.dropzone.dev/images/icons/github.svg" width={150} height={150} alt='github code' />
-            </React.Fragment>
-
-
-
             <Button variant="outline-secondary" onClick={ () => openLinkInNewTab('https://mighty-forest-71579.herokuapp.com/')}> 疾患イメージのサンプル </Button>
 
 
