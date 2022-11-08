@@ -126,6 +126,90 @@ class Classifier extends Component {
               )
             }));
 
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 1 ? Object.assign(obj, { value: result_list[0][1]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 2 ? Object.assign(obj, { value: result_list[0][2]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 3 ? Object.assign(obj, { value: result_list[0][3]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 4 ? Object.assign(obj, { value: result_list[0][4]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 5 ? Object.assign(obj, { value: result_list[0][5]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 6 ? Object.assign(obj, { value: result_list[0][6]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 7 ? Object.assign(obj, { value: result_list[0][7]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 8 ? Object.assign(obj, { value: result_list[0][8]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 9 ? Object.assign(obj, { value: result_list[0][9]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 10 ? Object.assign(obj, { value: result_list[0][10]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 11 ? Object.assign(obj, { value: result_list[0][11]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 12 ? Object.assign(obj, { value: result_list[0][12]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 13 ? Object.assign(obj, { value: result_list[0][13]}) : obj)
+              )
+            }));
+
+            this.setState(prevState => ({
+                result: prevState.result.map(
+                obj => (obj._id === 14 ? Object.assign(obj, { value: result_list[0][14]}) : obj)
+              )
+            }));
+
             console.log(this.state.result)
             //console.log(result_list[0][0])
             console.log(resp)
