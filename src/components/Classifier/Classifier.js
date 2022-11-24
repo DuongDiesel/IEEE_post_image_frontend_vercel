@@ -317,7 +317,7 @@ class Classifier extends Component {
                         <div {...getRootProps({ className: 'dropzone back' })}>
                             <input {...getInputProps()} />
                             <i className="far fa-image mb-2 text-muted" style={{ fontSize: 100 }}></i>
-                            <p className='text-muted'>{isDragActive ? "Drop some images " : "ここにファイルをドラッグ アンド ドロップするか、クリックしてファイルを選択します。"}</p>
+                            <p className='text-muted'>{isDragActive ? "Drop some images " : "Drag and drop image file here or click to select file."}</p>
                         </div>
                         <aside>
                             {files}
