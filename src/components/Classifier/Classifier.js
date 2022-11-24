@@ -349,7 +349,7 @@ class Classifier extends Component {
                 )}
             </Dropzone>
 
-            <Button variant="outline-secondary" onClick={ () => openLinkInNewTab('https://mighty-forest-71579.herokuapp.com/')}> 疾患イメージのサンプル </Button>
+            <Button variant="outline-secondary" onClick={ () => openLinkInNewTab('https://mighty-forest-71579.herokuapp.com/')}> Disease image sample </Button>
 
 
 

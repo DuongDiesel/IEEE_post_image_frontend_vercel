@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <h1>Web diagnostic system</h1>
+      <h1 class="display-1">Web diagnostic system</h1>
       <Classifier/>
     </div>
   );
